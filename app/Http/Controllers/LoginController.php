@@ -31,7 +31,8 @@ class LoginController extends Controller
             'code' => 200,
             'status' => true,
             'token' => $token,
-            'type' => 'Bearer'
+            'type' => 'Bearer',
+            'message' => 'User login successfully.'
         ]);
     }
 }

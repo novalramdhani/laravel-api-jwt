@@ -23,7 +23,8 @@ class RegisterController extends Controller
 
         return (new UserResource($user))->additional([
             'code' => 201,
-            'status' => true
+            'status' => true,
+            'message' => 'New user created successfully.'
         ]);
     }
 }
