@@ -21,7 +21,7 @@ class LogoutController extends Controller
             return response()->json([
                 'code' => 200,
                 'status' => true,
-                'message' => 'User logout successfully.gi'
+                'message' => 'User logout successfully'
             ]);
         }
     }
