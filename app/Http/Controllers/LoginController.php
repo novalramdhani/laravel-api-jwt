@@ -17,9 +17,7 @@ class LoginController extends Controller
      */
     public function __invoke(LoginRequest $request)
     {
-        $credentials = $request->validated();
-
-        if (!$token = JWTAuth::attempt($credentials)) {
+        if (!$token = JWTAuth::attempt($request->validated())) {
             return response()->json([
                 'code' => 404,
                 'status' => false,
